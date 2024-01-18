@@ -1,0 +1,8 @@
+- name: Installing Packages
+  hosts: localhost
+  gather_facts: false
+
+  roles:
+    - role: loki-promtail
+    - role: helm
+
